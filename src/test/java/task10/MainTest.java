@@ -9,7 +9,6 @@ import task10.entity.Person;
 import task10.entity.Task;
 import task10.entity.WorkTask;
 import task10.util.HibernateUtil;
-
 import javax.persistence.EntityManager;
 import java.time.LocalDate;
 
@@ -21,8 +20,8 @@ public class MainTest extends Assert {
     @Test
     public void testHomeTask() {
         Task homeTask = HomeTask.builder()
-                .startDate(LocalDate.of(2022, 03, 03))
-                .endDate(LocalDate.of(2022, 03, 07))
+                .startDate(LocalDate.of(2022, 3, 3))
+                .endDate(LocalDate.of(2022, 3, 7))
                 .executorPerson(new Person("Lilia", "Cvetkova"))
                 .observerPerson(new Person("Maksim", "Petrov"))
                 .name("Test1")

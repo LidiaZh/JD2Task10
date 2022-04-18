@@ -7,13 +7,16 @@ import task10.entity.WorkTask;
 import task10.util.HibernateUtil;
 import javax.persistence.EntityManager;
 import java.time.LocalDate;
-
+/**
+ * Main class
+ * to run project
+ */
 public class Main {
     public static void main(String[] args) {
 
         Task homeTask = HomeTask.builder()
-                .startDate(LocalDate.of(2022,04,10))
-                .endDate(LocalDate.of(2022,04,12))
+                .startDate(LocalDate.of(2022, 4, 10))
+                .endDate(LocalDate.of(2022, 4, 12))
                 .executorPerson(new Person("Maria", "Petrova"))
                 .observerPerson(new Person("Tamara", "Ivanova"))
                 .name("Task1")
